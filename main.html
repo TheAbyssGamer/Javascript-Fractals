@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "style.css"> 
+
+    </head>
+    <body class="bg">
+        <div style="margin-left: 5%;">
+            <p class="menu-text">Magnifier</p><p class="menu-text">PanX</p><p class="menu-text">PanY</p><p class="menu-text">Iterations</p><p class="menu-text">Color</p><p class="menu-text">Fractal Tree</p>
+            <span style="margin-left: 2.5%;">
+                <input type="range" class="slider-style" min="100" max="5000" value="300" step="50" id="MbrotMagnificationFactor">
+                <span style="margin-left: 3.5%;"><input type="range" class="slider-style" min="-500" max="500" value="100 step="1 id="MbrotPanX" style="width: 10%;"></span>
+                <span style="margin-left: 3.5%;"><input type="range" class="slider-style" min="-500" max="500" value="100 step="1" id="MbrotPanY" style="width: 10%;"></span>
+                <span style="margin-left: 9%;"><input type="number" class="input-number" value="100" id ="MbrotIteration"></span>
+                <span class="menu-global">
+                    <input type="range" class="slider-style" min="0" max = "360" step ="10" id="MbrotColors" style="margin-left: 3.5%;">
+                </span>
+                
+                <div style="background-color:hsl(0,100%,50%);width:15%;height:15px"class="slider-color-show" id="MbrotCurrentColor"><p class="slider-number" id="MagnificationText">3</p></div>
+            </span>
+        </div>
+        <hr class="line">
+        <script src = "fractals.js"></script>
+    </body>
+</html>
