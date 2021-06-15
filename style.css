@@ -3,7 +3,7 @@
 
 .fractals-border{
     position:absolute;
-    top: 59%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -80,7 +80,7 @@
   }
 
   .slider-number{
-    margin-left: -410%;
+    margin-left: -121%;
     margin-bottom: 0%;
     margin-top: 0%;
     font-family: 'Roboto', sans-serif;
@@ -93,7 +93,7 @@
   }
 
   .slider-color-show{
-    margin-left: 67.4%;
+    margin-left: 26.5%;
     margin-bottom: 0%;
     margin-top: 0%;
     font-family: 'Roboto', sans-serif;
@@ -128,6 +128,25 @@
     -webkit-text-stroke-color: #c0c0c0;
   }
 
+  .input-checkbox{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    margin-top: -0.2%;
+    background: #d3d3d300;
+    border: 5px solid #46494c;
+    outline: 3px solid #c0c0c0;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size: 30px;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color: #c0c0c0;
+  }
+
+  .input-checkbox:checked{
+    background: #46494c;
+  }
+
   .input-number::-webkit-outer-spin-button,
   .input-number::-webkit-inner-spin-button{
     -webkit-appearance: none;
@@ -137,4 +156,13 @@
   .input-number[type=number]{
     -moz-appearance: textfield;
     
+  }
+
+  .credit-text{
+    text-align:justify;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size: 20px;
+    margin:0%;
+    color: #c0c0c0;
   }

@@ -5,18 +5,26 @@
 
     </head>
     <body class="bg">
-        <div style="margin-left: 5%;">
-            <p class="menu-text" style="text-align: center;">Lenght</p><p class="menu-text">PanX</p><p class="menu-text">PanY</p><p class="menu-text">Iterations</p><p class="menu-text">Color</p><a href="main.html" class="menu-text" style="font-size: 45px;"> Mandlebrot set</a>
+        <div style="margin-left:0%" >
+            <p class="menu-text" style="text-align: center;">Lenght</p>
+            <p class="menu-text" style="margin-left: 10%;">Color</p>
+            <p class="menu-text">Leafs</p>
+            <p class="menu-text">Shadows</p>
+            <p class="menu-text">Curves</p>
+            <a href="main.html" class="menu-text" style="font-size: 45px;"> MBROT</a>
+            <br>
             <span style="margin-left: 2.5%;">
                 <input type="range" class="slider-style" min="10" max="180" value="120" step="1" id="TreeLenght">
-                <span style="margin-left: 3.5%;"><input type="range" class="slider-style" min="-500" max="500" value="250 step="1 id="MbrotPanX" style="width: 10%;"></span>
-                <span style="margin-left: 3.5%;"><input type="range" class="slider-style" min="-500" max="500" value="150 step="1" id="MbrotPanY" style="width: 10%;"></span>
-                <span style="margin-left: 9%;"><input type="number" class="input-number" value="100" id ="MbrotIteration"></span>
                 <span class="menu-global">
-                    <input type="range" class="slider-style" min="0" max = "360" step ="10" id="MbrotColors" style="margin-left: 3.5%;">
+                    <input type="range" class="slider-style" min="0" max = "360" step ="10" id="TreeColors" style="margin-left: 3.5%;">
                 </span>
                 
-                <div style="background-color:hsl(0,100%,50%);width:15%;height:15px"class="slider-color-show" id="MbrotCurrentColor"><p class="slider-number" id="LenghtText">3</p></div>
+                <input type="checkbox" class="input-checkbox" style="margin-left:5%;" id="CheckLeafs">
+                <input type="checkbox" class="input-checkbox" style="margin-left:20%" id="CheckShadows">
+                <input type="checkbox" class="input-checkbox" style="margin-left:35%;" id="CheckCurves">
+                <div style="background-color:hsl(0,100%,50%);width:15%;height:15px;"class="slider-color-show" id="TreeCurrentColor">
+                    <p class="slider-number" id="LenghtText">3</p>
+                </div>
             </span>
         </div>
         <hr class="line">
@@ -25,6 +33,8 @@
             <input type="image" src="pause.png" style="margin-left: 5%;margin-top: 34%;width: 4%;height: 4%;" id="PauseButton">
             <input type="image" src="replay.png" style="margin-left: 5%;margin-top: 34%;width: 4%;height: 4%;" id="ReplayButton">
         </div>
+        <input type="image" src="save.png" style="bottom: 1%;left: 0.5%;position: absolute;width: 7%;height: 7%;" id="SaveButton">
         <script src = "fractals-tree.js"></script>
+        <p style="bottom: 0%;right: 0.5%;position: absolute;" class="credit-text">©Dumitru Rares</p>
     </body>
 </html>
